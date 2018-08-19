@@ -4,28 +4,31 @@ class Cards {
   static rawCards = () =>
     Map({
       japan: Map({
-        name: "us / japan pact",
+        name: "US / Japan Pact",
         early: true,
         event: true,
         side: "us",
         ops: 4
       }),
       assc: Map({
-        name: "asia scoring",
+        name: "Asia Scoring",
+        abbr: "AS Score",
         early: true,
         event: false,
         side: "neutral",
         scoringcard: true
       }),
       eusc: Map({
-        name: "europe scoring",
+        name: "Europe Scoring",
+        abbr: "EU Score",
         early: true,
         event: false,
         side: "neutral",
         scoringcard: true
       }),
       mesc: Map({
-        name: "middle east scoring",
+        name: "Middle East Scoring",
+        abbr: "ME Score",
         early: true,
         event: false,
         side: "neutral",
@@ -33,28 +36,31 @@ class Cards {
       }),
       seasc: Map({
         key: "sea",
-        name: "southeast asia scoring",
+        name: "Southeast Asia Scoring",
+        abbr: "SEA Score",
         mid: true,
         event: true,
         side: "neutral",
         scoringcard: true
       }),
       romabd: Map({
-        name: "romanian abdication",
+        name: "Romanian Abdication",
         early: true,
         event: true,
         side: "ussr",
         ops: 1
       }),
       ireds: Map({
-        name: "independent reds",
+        name: "Independent Reds",
+        abbr: "Indie Reds",
         early: true,
         event: true,
         side: "us",
         ops: 2
       }),
       olymp: Map({
-        name: "olympic games",
+        name: "Olympic Games",
+        abbr: "Olympic",
         early: true,
         event: false,
         side: "neutral",
@@ -62,351 +68,385 @@ class Cards {
       }),
       rsp: Map({
         key: "rsp",
-        name: "redscare / purge",
+        name: "Redscare / Purge",
+        abbr: "RS/P",
         early: true,
         event: false,
         side: "neutral",
         ops: 4
       }),
       bw: Map({
-        name: "brush war",
+        name: "Brush War",
+        abbr: "Brush",
         mid: true,
         event: false,
         side: "neutral",
         ops: 3
       }),
       willy: Map({
-        name: "willy brandt",
+        name: "Willy Brandt",
         mid: true,
         event: true,
         side: "ussr",
         ops: 2
       }),
       "d&c": Map({
-        name: "duck and cover",
+        name: "Duck and Cover",
         early: true,
         event: false,
         side: "us",
         ops: 3
       }),
       fyp: Map({
-        name: "five year plan",
+        name: "Five Year Plan",
         early: true,
         event: false,
         side: "us",
         ops: 3
       }),
       socgov: Map({
-        name: "socialist governments",
+        name: "Socialist Governments",
         early: true,
         event: false,
         side: "ussr",
         ops: 3
       }),
       yuri: Map({
-        name: "yuri & samantha",
+        name: "Yuri & Samantha",
         late: true,
         event: true,
         side: "ussr",
         ops: 2
       }),
       fidel: Map({
-        name: "fidel",
+        name: "Fidel",
         early: true,
         event: true,
         side: "ussr",
         ops: 2
       }),
       viet: Map({
-        name: "vietnam revolts",
+        name: "Vietnam Revolts",
+        abbr: "VR",
         early: true,
         event: true,
         side: "ussr",
         ops: 2
       }),
       block: Map({
-        name: "blockade",
+        name: "Blockade",
         early: true,
         event: true,
         side: "ussr",
         ops: 1
       }),
       kwar: Map({
-        name: "korean war",
+        name: "Korean War",
+        abbr: "K-War",
         early: true,
         event: true,
         side: "ussr",
         ops: 2
       }),
       aiwar: Map({
-        name: "arab-israeli war",
+        name: "Arab-Israeli War",
+        abbr: "AI-War",
         early: true,
         event: false,
         side: "ussr",
         ops: 2
       }),
       come: Map({
-        name: "comecon",
+        name: "Comecon",
         early: true,
         event: true,
         side: "ussr",
         ops: 3
       }),
       nass: Map({
-        name: "nasser",
+        name: "Nasser",
         early: true,
         event: true,
         side: "ussr",
         ops: 1
       }),
       warsaw: Map({
-        name: "warsaw pact formed",
+        name: "Warsaw Pact Formed",
+        abbr: "Warsaw",
         early: true,
         event: true,
         side: "ussr",
         ops: 3
       }),
       degau: Map({
-        name: "degaulle leads france",
+        name: "DeGaulle Leads France",
+        abbr: "DeGaulle",
         early: true,
         event: true,
         side: "ussr",
         ops: 3
       }),
       cns: Map({
-        name: "captured nazi scientist",
+        name: "Captured Nazi Scientist",
+        abbr: "CNS",
         early: true,
         event: true,
         side: "neutral",
         ops: 1
       }),
       trum: Map({
-        name: "truman doctrine",
+        name: "Truman Doctrine",
+        abbr: "Truman",
         early: true,
         event: true,
         side: "us",
         ops: 1
       }),
-      nato: Map({ name: "nato", early: true, event: true, side: "us", ops: 4 }),
+      nato: Map({
+        name: "NATO",
+        early: true,
+        event: true,
+        side: "us",
+        ops: 4
+      }),
       mp: Map({
-        name: "marshall plan",
+        name: "Marshall Plan",
+        abbr: "Marshall",
         early: true,
         event: true,
         side: "us",
         ops: 4
       }),
       ipwar: Map({
-        name: "indo-pakistani war",
+        name: "Indo-Pakistani War",
+        abbr: "IP-War",
         early: true,
         event: false,
         side: "neutral",
         ops: 2
       }),
       cont: Map({
-        name: "containment",
+        name: "Containment",
         early: true,
         event: true,
         side: "us",
         ops: 3
       }),
       cia: Map({
-        name: "cia created",
+        name: "CIA Created",
+        abbr: "CIA",
         early: true,
         event: true,
         side: "us",
         ops: 1
       }),
       suez: Map({
-        name: "suez crisis",
+        name: "Suez Crisis",
+        abbr: "Suez",
         early: true,
         event: true,
         side: "ussr",
         ops: 3
       }),
       eeunr: Map({
-        name: "east european unrest",
+        name: "East European Unrest",
+        abbr: "EU Unrest",
         early: true,
         event: false,
         side: "us",
         ops: 3
       }),
       decol: Map({
-        name: "decolonization",
+        name: "Decolonization",
+        abbr: "Decol",
         early: true,
         event: false,
         side: "ussr",
         ops: 2
       }),
       destal: Map({
-        name: "destalinization",
+        name: "Destalinization",
+        abbr: "Destal",
         early: true,
         event: true,
         side: "ussr",
         ops: 3
       }),
       un: Map({
-        name: "un intervention",
+        name: "UN Intervention",
+        abbr: "UN",
         early: true,
         event: false,
         side: "neutral",
         ops: 1
       }),
       ntb: Map({
-        name: "nuclear test ban",
+        name: "Nuclear Test Ban",
+        abbr: "NTB",
         early: true,
         event: false,
         side: "neutral",
         ops: 4
       }),
       form: Map({
-        name: "formosan resolution",
+        name: "Formosan Resolution",
+        abbr: "Formosa",
         early: true,
         event: true,
         side: "us",
         ops: 2
       }),
       def: Map({
-        name: "defectors",
+        name: "Defectors",
         early: true,
         event: false,
         side: "us",
         ops: 2
       }),
       casc: Map({
-        name: "central american scoring",
+        name: "Central American Scoring",
+        abbr: "CA Score",
         mid: true,
         event: false,
         side: "neutral",
         scoringcard: true
       }),
       armsr: Map({
-        name: "arms race",
+        name: "Arms Race",
         mid: true,
         event: false,
         side: "neutral",
         ops: 3
       }),
       cubmc: Map({
-        name: "cuban missile crisis",
+        name: "Cuban Missile Crisis",
+        abbr: "Cuba",
         mid: true,
         event: true,
         side: "neutral",
         ops: 3
       }),
       nsubs: Map({
-        name: "nuclear subs",
+        name: "Nuclear Subs",
         mid: true,
         event: true,
         side: "us",
         ops: 2
       }),
       quag: Map({
-        name: "quagmire",
+        name: "Quagmire",
+        abbr: "Quag",
         mid: true,
         event: true,
         side: "ussr",
         ops: 3
       }),
       salt: Map({
-        name: "salt negotiations",
+        name: "SALT Negotiations",
+        abbr: "SALT",
         mid: true,
         event: true,
         side: "neutral",
         ops: 3
       }),
       bear: Map({
-        name: "bear trap",
+        name: "Bear Trap",
+        abbr: "Trap",
         mid: true,
         event: true,
         side: "us",
         ops: 3
       }),
       summ: Map({
-        name: "summit",
+        name: "Summit",
         mid: true,
         event: false,
         side: "neutral",
         ops: 1
       }),
       howil: Map({
-        name: "how i learned to stop worrying",
+        name: "How I Learned to Stop Worrying",
         mid: true,
         event: true,
         side: "neutral",
         ops: 2
       }),
       junta: Map({
-        name: "junta",
+        name: "Junta",
         mid: true,
         event: false,
         side: "neutral",
         ops: 2
       }),
       kitch: Map({
-        name: "kitchen debates",
+        name: "Kitchen Debates",
         mid: true,
         event: true,
         side: "us",
         ops: 1
       }),
       misenv: Map({
-        name: "missile envy",
+        name: "Missile Envy",
         mid: true,
         event: false,
         side: "neutral",
         ops: 2
       }),
       wwby: Map({
-        name: "we will bury you",
+        name: "We Will Bury You",
         mid: true,
         event: true,
         side: "ussr",
         ops: 4
       }),
       brez: Map({
-        name: "brezhnev doctrine",
+        name: "Brezhnev Doctrine",
+        abbr: "Brezhnev",
         mid: true,
         event: true,
         side: "ussr",
         ops: 3
       }),
       portu: Map({
-        name: "portuguese empire crumbles",
+        name: "Portuguese Empire Crumbles",
+        abbr: "Portuguese",
         mid: true,
         event: true,
         side: "ussr",
         ops: 2
       }),
       safrun: Map({
-        name: "south african unrest",
+        name: "South African Unrest",
+        abbr: "SA Unrest",
         mid: true,
         event: false,
         side: "ussr",
         ops: 2
       }),
       allend: Map({
-        name: "allende",
+        name: "Allende",
         mid: true,
         event: true,
         side: "ussr",
         ops: 1
       }),
       musrev: Map({
-        name: "muslim revolution",
+        name: "Muslim Revolution",
+        abbr: "Muslim",
         mid: true,
         event: false,
         side: "ussr",
         ops: 4
       }),
       cult: Map({
-        name: "cultural revolution",
+        name: "Cultural Revolution",
         mid: true,
         event: true,
         side: "ussr",
         ops: 3
       }),
       flowr: Map({
-        name: "flower power",
+        name: "Flower Power",
         mid: true,
         event: true,
         side: "ussr",
@@ -414,337 +454,372 @@ class Cards {
       }),
       u2: Map({
         name: "U-2 incident",
+        abbr: "U2",
         mid: true,
         event: true,
         side: "ussr",
         ops: 3
       }),
       opec: Map({
-        name: "opec",
+        name: "OPEC",
         mid: true,
         event: false,
         side: "ussr",
         ops: 3
       }),
       lone: Map({
-        name: "lone gunman",
+        name: "Lone Gunman",
+        abbr: "Gunman",
         mid: true,
         event: true,
         side: "ussr",
         ops: 1
       }),
       colrg: Map({
-        name: "colonial rear guards",
+        name: "Colonial Rear Guards",
+        abbr: "Colo Guards",
         mid: true,
         event: false,
         side: "us",
         ops: 2
       }),
       panam: Map({
-        name: "panama canal returned",
+        name: "Panama Canal Returned",
         mid: true,
         event: true,
         side: "us",
         ops: 1
       }),
       camp: Map({
-        name: "camp david accords",
+        name: "Camp David Accords",
         mid: true,
         event: true,
         side: "us",
         ops: 2
       }),
       pupp: Map({
-        name: "puppet governments",
+        name: "Puppet Governments",
         mid: true,
         event: true,
         side: "us",
         ops: 2
       }),
       gsales: Map({
-        name: "grain sales to soviets",
+        name: "Grain Sales to Soviets",
+        abbr: "Grain",
         mid: true,
         event: false,
         side: "us",
         ops: 2
       }),
       jp2: Map({
-        name: "john paul II elected pope",
+        name: "John Paul II Elected Pope",
+        abbr: "Pope",
         mid: true,
         event: true,
         side: "us",
         ops: 2
       }),
       lads: Map({
-        name: "latin american death squads",
+        name: "Latin American Death Squads",
         mid: true,
         event: false,
         side: "neutral",
         ops: 2
       }),
       nixon: Map({
-        name: "nixon plays the china card",
+        name: "Nixon Plays the China Card",
+        abbr: "Nixon",
         mid: true,
         event: true,
         side: "us",
         ops: 2
       }),
       oas: Map({
-        name: "oas founded",
+        name: "OAS Founded",
+        abbr: "OAS",
         mid: true,
         event: true,
         side: "us",
         ops: 1
       }),
       sadat: Map({
-        name: "sadat expels soviets",
+        name: "Sadat Expels Soviets",
+        abbr: "Sadat",
         mid: true,
         event: true,
         side: "us",
         ops: 1
       }),
       shutt: Map({
-        name: "shuttle diplomacy",
+        name: "Shuttle Diplomacy",
+        abbr: "Shuttle",
         mid: true,
         event: true,
         side: "us",
         ops: 3
       }),
       voa: Map({
-        name: "voice of america",
+        name: "Voice of America",
+        abbr: "VOA",
         mid: true,
         event: false,
         side: "us",
         ops: 2
       }),
       lib: Map({
-        name: "liberation theology",
+        name: "Liberation Theology",
         mid: true,
         event: false,
         side: "ussr",
         ops: 2
       }),
       ussu: Map({
-        name: "ussuri river skirmish",
+        name: "Ussuri River Skirmish",
+        abbr: "Ussuri",
         mid: true,
         event: true,
         side: "us",
         ops: 3
       }),
       asknot: Map({
-        name: "ask not what your country...",
+        name: "Ask Not What Your Country...",
         mid: true,
         event: true,
         side: "us",
         ops: 3
       }),
       allpro: Map({
-        name: "alliance for progress",
+        name: "Alliance For Progress",
         mid: true,
         event: true,
         side: "us",
         ops: 3
       }),
       afsc: Map({
-        name: "africa scoring",
+        name: "Africa Scoring",
+        abbr: "AF Score",
         mid: true,
         event: false,
         side: "neutral",
         scoringcard: true
       }),
       onest: Map({
-        name: "one small step",
+        name: "One Small Step",
         mid: true,
         event: false,
         side: "neutral",
         ops: 2
       }),
       sasc: Map({
-        name: "south america scoring",
+        name: "South America Scoring",
+        abbr: "SA Score",
         mid: true,
         event: false,
         side: "neutral",
         scoringcard: true
       }),
       hostage: Map({
-        name: "iranian hostage crisis",
+        name: "Iranian Hostage Crisis",
         late: true,
         event: true,
         side: "ussr",
         ops: 3
       }),
       ironl: Map({
-        name: "the iron lady",
+        name: "The Iron Lady",
         late: true,
         event: true,
         side: "us",
         ops: 3
       }),
       reagan: Map({
-        name: "reagan bombs libya",
+        name: "Reagan Bombs Libya",
         late: true,
         event: true,
         side: "us",
         ops: 2
       }),
       sw: Map({
-        name: "star wars",
+        name: "Star Wars",
         late: true,
         event: true,
         side: "us",
         ops: 2
       }),
       norsea: Map({
-        name: "north sea oil",
+        name: "North Sea Oil",
         late: true,
         event: true,
         side: "us",
         ops: 3
       }),
       refo: Map({
-        name: "the reformer",
+        name: "The Reformer",
         late: true,
         event: true,
         side: "ussr",
         ops: 3
       }),
       marine: Map({
-        name: "marine barracks bombing",
+        name: "Marine Barracks Bombing",
         late: true,
         event: true,
         side: "ussr",
         ops: 2
       }),
       kal: Map({
-        name: "soviets shoot down KAL-007",
+        name: "Soviets Shoot Down KAL-007",
+        abbr: "KAL-007",
         late: true,
         event: true,
         side: "us",
         ops: 4
       }),
       glas: Map({
-        name: "glasnost",
+        name: "Glasnost",
         late: true,
         event: true,
         side: "ussr",
         ops: 4
       }),
       ortega: Map({
-        name: "ortega elected in nicaragua",
+        name: "Ortega Elected in Nicaragua",
+        abbr: "Ortega",
         late: true,
         event: true,
         side: "ussr",
         ops: 2
       }),
       terror: Map({
-        name: "terrorism",
+        name: "Terrorism",
         late: true,
         event: false,
         side: "neutral",
         ops: 2
       }),
       contra: Map({
-        name: "iran-contra scandal",
+        name: "Iran-Contra Scandal",
+        abbr: "Iran-Contra",
         late: true,
         event: true,
         side: "ussr",
         ops: 2
       }),
       chern: Map({
-        name: "chernobyl",
+        name: "Chernobyl",
         late: true,
         event: true,
         side: "us",
         ops: 3
       }),
       ladc: Map({
-        name: "latin american debt crisis",
+        name: "Latin American Debt Crisis",
         late: true,
         event: false,
         side: "ussr",
         ops: 2
       }),
       tdtw: Map({
-        name: "tear down this wall",
+        name: "Tear Down This Wall",
+        abbr: "Wall",
         late: true,
         event: true,
         side: "us",
         ops: 3
       }),
       evil: Map({
-        name: "an evil empire",
+        name: "An Evil Empire",
         late: true,
         event: true,
         side: "us",
         ops: 3
       }),
       aldr: Map({
-        name: "aldrich ames remix",
+        name: "Aldrich Ames Remix",
+        abbr: "Aldrich",
         late: true,
         event: true,
         side: "ussr",
         ops: 3
       }),
       persh: Map({
-        name: "pershing II deployed",
+        name: "Pershing II deployed",
+        abbr: "Pershing",
         late: true,
         event: true,
         side: "ussr",
         ops: 3
       }),
       warg: Map({
-        name: "wargames",
+        name: "Wargames",
         late: true,
         event: true,
         side: "neutral",
         ops: 4
       }),
       solid: Map({
-        name: "solidarity",
+        name: "Solidarity",
         late: true,
         event: true,
         side: "us",
         ops: 2
       }),
       iiw: Map({
-        name: "iran iraq war",
+        name: "Iran Iraq War",
         late: true,
         event: true,
         side: "neutral",
         ops: 2
       }),
       camb: Map({
-        name: "the cambridge five",
+        name: "The Cambridge Five",
+        abbr: "Cambridge",
         early: true,
         event: false,
         side: "ussr",
         ops: 2
       }),
       sprel: Map({
-        name: "special relationship",
+        name: "Special Relationship",
         early: true,
         event: false,
         side: "us",
         ops: 2
       }),
-      nord: Map({ name: "norad", early: true, event: true, side: "us", ops: 3 }),
-      che: Map({ name: "che", mid: true, event: false, side: "ussr", ops: 3 }),
+      nord: Map({
+        name: "NORAD",
+        early: true,
+        event: true,
+        side: "us",
+        ops: 3
+      }),
+      che: Map({
+        name: "Che",
+        mid: true,
+        event: false,
+        side: "ussr",
+        ops: 3
+      }),
       tehran: Map({
-        name: "our man in tehran",
+        name: "Our Man in Tehran",
+        abbr: "Tehran",
         mid: true,
         event: true,
         side: "us",
         ops: 2
       }),
       awacs: Map({
-        name: "awacs sale to saudis",
+        name: "AWACS Sale to Saudis",
+        abbr: "AWACS",
         late: true,
         event: true,
         side: "us",
         ops: 3
       }),
       abm: Map({
-        name: "ABM treaty",
+        name: "ABM Treaty",
+        abbr: "ABM",
         mid: true,
         event: false,
         side: "neutral",

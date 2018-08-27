@@ -307,7 +307,7 @@ class App extends Component {
       side={c.get("side")}
       ops={c.get("ops")}
       event={c.get("event")}
-      name={this.state.data.get("shortCardNames") ? k : c.get("name")}
+      name={(this.state.data.get("shortCardNames") && c.has("abbr")) ? c.get("abbr") : c.get("name")}
       onNameClick={this.onNameClick}
       onDiscard={this.discardCard}
       onRemove={this.removeCard}
